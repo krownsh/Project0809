@@ -1,0 +1,12 @@
+#root{
+    font-size:18px;
+}
+input{
+    width: 100%;
+}
+input[type='checkbox'],input[type='radio']{
+    width: auto;
+}
+select{
+    width: 100%;
+}
