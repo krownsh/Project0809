@@ -1,0 +1,27 @@
+#spa {
+    display: inline-block;
+    border: 2px solid red;
+    padding: 5px;
+    margin: 3px;
+    white-space: nowrap;
+}
+
+#img {
+    border-radius:50%;
+}
+
+#icon {
+    width: 30px;
+    height: 30px;
+} 
+
+#buttonA {
+    margin-top: 8%;
+    width: 80%;
+    height: 10%;
+}
+
+#title {
+    font-size: 30px;
+    background-color: rgba(211, 211, 211, 0.4)
+}
