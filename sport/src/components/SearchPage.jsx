@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import Card from './Card';
 import '../css/search.css';
 import '../js/search.js';
 class SearchPage extends Component {
     state = {}
-
+    
     render() {
         return (
             <div className='container'>
@@ -56,8 +57,8 @@ class SearchPage extends Component {
                             <input type="radio" name='price' /> $ 3000 ~ 以上
 
                             <div className='d-flex justify-content-between mt-3'><span>類別</span><span className='text-secondary'>清除</span></div>
-                            <input type="checkbox" id="sun" name="sun" />
-                            <label for="sun" className='m-1'> 星期日</label><br />
+                            <input type="checkbox" id="yoga" name="sun" />
+                            <label for="yoga" className='m-1'>瑜珈</label><br />
 
                             <div className='d-flex justify-content-between mt-3'><span>人數</span><span className='text-secondary'>清除</span></div>
                             <input type="radio" name='people' /> 一對一 <br />
@@ -73,60 +74,12 @@ class SearchPage extends Component {
                             <div className='col-6 shadow btn'>找場地</div>
                         </div>
                         <div className='row mt-5 justify-content-center'>
-                            <div className="col-3 card m-3">
-                                <img src="https://fakeimg.pl/300/" className="card-img-top" />
-                                <div className="card-body">
-                                    <h5 className="card-title">課程名稱</h5>
-                                    <p className="card-text">教練名稱</p>
-                                    <p className="card-text"><small className="text-muted">地點</small></p>                                    
-                                </div>
-                                <div class="bg-white card-footer"><span>評價</span><span className="m-5">$價錢</span></div>
-                            </div>
-                            <div className="col-3 card m-3">
-                                <img src="https://fakeimg.pl/300/" className="card-img-top" />
-                                <div className="card-body">
-                                    <h5 className="card-title">課程名稱</h5>
-                                    <p className="card-text">教練名稱</p>
-                                    <p className="card-text"><small className="text-muted">地點</small></p>                                    
-                                </div>
-                                <div class="bg-white card-footer"><span>評價</span><span className="m-5">$價錢</span></div>
-                            </div>
-                            <div className="col-3 card m-3">
-                                <img src="https://fakeimg.pl/300/" className="card-img-top" />
-                                <div className="card-body">
-                                    <h5 className="card-title">課程名稱</h5>
-                                    <p className="card-text">教練名稱</p>
-                                    <p className="card-text"><small className="text-muted">地點</small></p>                                    
-                                </div>
-                                <div class="bg-white card-footer"><span>評價</span><span className="m-5">$價錢</span></div>
-                            </div>
-                            <div className="col-3 card m-3">
-                                <img src="https://fakeimg.pl/300/" className="card-img-top" />
-                                <div className="card-body">
-                                    <h5 className="card-title">課程名稱</h5>
-                                    <p className="card-text">教練名稱</p>
-                                    <p className="card-text"><small className="text-muted">地點</small></p>                                    
-                                </div>
-                                <div class="bg-white card-footer"><span>評價</span><span className="m-5">$價錢</span></div>
-                            </div>
-                            <div className="col-3 card m-3">
-                                <img src="https://fakeimg.pl/300/" className="card-img-top" />
-                                <div className="card-body">
-                                    <h5 className="card-title">課程名稱</h5>
-                                    <p className="card-text">教練名稱</p>
-                                    <p className="card-text"><small className="text-muted">地點</small></p>                                    
-                                </div>
-                                <div class="bg-white card-footer"><span>評價</span><span className="m-5">$價錢</span></div>
-                            </div>
-                            <div className="col-3 card m-3">
-                                <img src="https://fakeimg.pl/300/" className="card-img-top" />
-                                <div className="card-body">
-                                    <h5 className="card-title">課程名稱</h5>
-                                    <p className="card-text">教練名稱</p>
-                                    <p className="card-text"><small className="text-muted">地點</small></p>                                    
-                                </div>
-                                <div class="bg-white card-footer"><span>評價</span><span className="m-5">$價錢</span></div>
-                            </div>
+                            <Card />
+                            <Card />
+                            <Card />
+                            <Card />
+                            <Card />
+                            <Card />
                         </div>
 
                     </div>
