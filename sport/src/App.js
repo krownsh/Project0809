@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import NavBar from './components/navBar';
+import NavBarOK from './components/navBarOK.jsx';
+// import NavBarContent from './components/navBarContent.jsx';
+import { BrowserRouter, HashRouter, Route, Switch } from 'react-router-dom'
 
 class App extends Component {
     state = { 
@@ -7,9 +9,9 @@ class App extends Component {
      } 
     render() { 
       return (
-        <>
-          <NavBar/> 
-        </>
+        <HashRouter>
+          <NavBarOK/>
+        </HashRouter>
       );
     }
   }

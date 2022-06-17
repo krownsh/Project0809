@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.css'
 
-class NavBar extends Component {
+class Content extends Component {
     state = {  } 
     render() { 
         return (
             <>
-            123
+            首頁測試中
             </>
         );
     }
 }
  
-export default NavBar;
+export default Content;
