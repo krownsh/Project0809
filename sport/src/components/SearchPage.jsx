@@ -36,7 +36,7 @@ class SearchPage extends Component {
                             <label for="tues" className='m-1'> 星期二</label><br />
                             <input type="checkbox" id="wed" name="wed" />
                             <label for="wed" className='m-1'> 星期三</label><br />
-                            <input type="checkbox" id="thur" name="thur"/>
+                            <input type="checkbox" id="thur" name="thur" />
                             <label for="thur" className='m-1'> 星期四</label><br />
                             <input type="checkbox" id="fri" name="fri" />
                             <label for="fri" className='m-1'> 星期五</label><br />
@@ -49,38 +49,86 @@ class SearchPage extends Component {
                             <input type="range" />
 
                             <div className='d-flex justify-content-between mt-3'><span>價錢</span><span className='text-secondary'>清除</span></div>
-                            <input type="radio" name='price'/> $ 0 ~ $ 500 <br />
-                            <input type="radio" name='price'/> $ 501 ~ $ 1,000 <br />
-                            <input type="radio" name='price'/> $ 1,001 ~ $ 2,000 <br />
-                            <input type="radio" name='price'/> $ 2,001 ~ $ 3,000 <br />
-                            <input type="radio" name='price'/> $ 3000 ~ 以上
+                            <input type="radio" name='price' /> $ 0 ~ $ 500 <br />
+                            <input type="radio" name='price' /> $ 501 ~ $ 1,000 <br />
+                            <input type="radio" name='price' /> $ 1,001 ~ $ 2,000 <br />
+                            <input type="radio" name='price' /> $ 2,001 ~ $ 3,000 <br />
+                            <input type="radio" name='price' /> $ 3000 ~ 以上
 
                             <div className='d-flex justify-content-between mt-3'><span>類別</span><span className='text-secondary'>清除</span></div>
                             <input type="checkbox" id="sun" name="sun" />
                             <label for="sun" className='m-1'> 星期日</label><br />
 
                             <div className='d-flex justify-content-between mt-3'><span>人數</span><span className='text-secondary'>清除</span></div>
-                            <input type="radio" name='people'/> 一對一 <br />
-                            <input type="radio" name='people'/> 一對多
+                            <input type="radio" name='people' /> 一對一 <br />
+                            <input type="radio" name='people' /> 一對多
 
-                            <input className='mt-3' type="submit" value={'顯示結果'}/>
+                            <input className='mt-3' type="submit" value={'顯示結果'} />
 
                         </form>
                     </div>
-                    <div className='col-9 border'>
+                    <div className='col-9 border '>
                         <div className='row text-center'>
                             <div className='col-6 shadow btn'>找課程</div>
                             <div className='col-6 shadow btn'>找場地</div>
                         </div>
-                        <div className='row text-center mt-5'>
-                            <div className='col-4'>123</div>
-                            <div className='col-4'>123</div>
-                            <div className='col-4'>123</div>
-                            <div className='col-4 mt-2'>123</div>
-                            <div className='col-4 mt-2'>123</div>
-                            <div className='col-4 mt-2'>123</div>
+                        <div className='row mt-5 justify-content-center'>
+                            <div className="col-3 card m-3">
+                                <img src="https://fakeimg.pl/300/" className="card-img-top" />
+                                <div className="card-body">
+                                    <h5 className="card-title">課程名稱</h5>
+                                    <p className="card-text">教練名稱</p>
+                                    <p className="card-text"><small className="text-muted">地點</small></p>                                    
+                                </div>
+                                <div class="bg-white card-footer"><span>評價</span><span className="m-5">$價錢</span></div>
+                            </div>
+                            <div className="col-3 card m-3">
+                                <img src="https://fakeimg.pl/300/" className="card-img-top" />
+                                <div className="card-body">
+                                    <h5 className="card-title">課程名稱</h5>
+                                    <p className="card-text">教練名稱</p>
+                                    <p className="card-text"><small className="text-muted">地點</small></p>                                    
+                                </div>
+                                <div class="bg-white card-footer"><span>評價</span><span className="m-5">$價錢</span></div>
+                            </div>
+                            <div className="col-3 card m-3">
+                                <img src="https://fakeimg.pl/300/" className="card-img-top" />
+                                <div className="card-body">
+                                    <h5 className="card-title">課程名稱</h5>
+                                    <p className="card-text">教練名稱</p>
+                                    <p className="card-text"><small className="text-muted">地點</small></p>                                    
+                                </div>
+                                <div class="bg-white card-footer"><span>評價</span><span className="m-5">$價錢</span></div>
+                            </div>
+                            <div className="col-3 card m-3">
+                                <img src="https://fakeimg.pl/300/" className="card-img-top" />
+                                <div className="card-body">
+                                    <h5 className="card-title">課程名稱</h5>
+                                    <p className="card-text">教練名稱</p>
+                                    <p className="card-text"><small className="text-muted">地點</small></p>                                    
+                                </div>
+                                <div class="bg-white card-footer"><span>評價</span><span className="m-5">$價錢</span></div>
+                            </div>
+                            <div className="col-3 card m-3">
+                                <img src="https://fakeimg.pl/300/" className="card-img-top" />
+                                <div className="card-body">
+                                    <h5 className="card-title">課程名稱</h5>
+                                    <p className="card-text">教練名稱</p>
+                                    <p className="card-text"><small className="text-muted">地點</small></p>                                    
+                                </div>
+                                <div class="bg-white card-footer"><span>評價</span><span className="m-5">$價錢</span></div>
+                            </div>
+                            <div className="col-3 card m-3">
+                                <img src="https://fakeimg.pl/300/" className="card-img-top" />
+                                <div className="card-body">
+                                    <h5 className="card-title">課程名稱</h5>
+                                    <p className="card-text">教練名稱</p>
+                                    <p className="card-text"><small className="text-muted">地點</small></p>                                    
+                                </div>
+                                <div class="bg-white card-footer"><span>評價</span><span className="m-5">$價錢</span></div>
+                            </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
