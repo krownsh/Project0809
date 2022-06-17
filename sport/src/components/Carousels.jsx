@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
-function Carousels() {
+function ControlledCarousel() {
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
@@ -45,10 +45,11 @@ function Carousels() {
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
+          <p>ㄏㄏ</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   );
 }
 
-export default Carousels;
+export default ControlledCarousel;
