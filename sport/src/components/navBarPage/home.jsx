@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.css'
-import Content from '../contentComponents/content.jsx';
+import '../../scss/bootstrap.scss';
+import 'bootstrap/dist/js/bootstrap';
+import Content from '../content.jsx';
 class home extends Component {
-    state = {  } 
+    state = {  }    
     render() { 
         return (
             <div>

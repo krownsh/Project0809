@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.css'
-
-class Content extends Component {
+class LoginRegister extends Component {
     state = {  } 
     render() { 
         return (
             <>
-            首頁測試中
+            測試會員登入跟註冊頁面
             </>
         );
     }
 }
  
-export default Content;
+export default LoginRegister;

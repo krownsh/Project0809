@@ -3,44 +3,38 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 
 // 導覽列物件
-import navBarContent from './navBarContent.jsx';
+import NavBarContent from './navBarContent';
 
 // 首頁
 import home from './navBarPage/home.jsx'; 
    
-// 購物車+商品  
-// 關於我
-
+// 場地與教練
+import coursesAndVenues from './navBarPage/coursesAndVenues.jsx';
+// 成為教練
+import becomeCoach from './navBarPage/becomeCoach.jsx';
+// 租場地
+import rentSpace from './navBarPage/rentSpace.jsx';
+// 會員登入及註冊
+import loginRegister from './navBarPage/loginRegister.jsx';
 class NavBarOK extends Component {
     state = { 
-        navStyle : {
-            "display":"flex",
-            "justifyContent":"center",
-            "margin":"-1% 20% 0px 30%",
-        },
-        count:0
-     } 
 
+    } 
 
     render() { 
         return (
             <HashRouter>
-            <div id="topTest" className='sticky-top bg bg-white mt-1' style={this.state.testStyle}>
-            <navBarContent/>
+            <div >
+
+            <NavBarContent />
             </div>
                 <div style={{margin:'auto'}}>
                 <Switch>
-                    <Route path="/123" component={home} exact/>
-                    {/* <Route path="/promotions" component={promotions} exact/>
-                    <Route path="/allCommodity" component={allCommodity} exact/>
-                    <Route path="/brandSort" component={brandSort} exact/>
-                    <Route path="/tennisRacket" component={tennisRacket} exact/>
-                    <Route path="/accessories" component={accessories} exact/>
-                    <Route path="/contactUs" component={contactUs} exact/>
-
-                    <Route path="/login" component={login} exact/>
-                    <Route path="/register" component={register} exact/>
-                    <Route path="/shoppingCart" component={shoppingCart} exact/> */}
+                    <Route path="/" component={home} exact/>
+                    <Route path="/coursesAndVenues" component={coursesAndVenues} exact/>
+                    <Route path="/becomeCoach" component={becomeCoach} exact/>
+                    <Route path="/rentSpace" component={rentSpace} exact/>
+                    <Route path="/loginRegister" component={loginRegister} exact/>
                  </Switch>
 
                  
