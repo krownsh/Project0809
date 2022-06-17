@@ -1,11 +1,12 @@
 import { Component } from "react";
 
 class Card extends Component {
-    state = {};
+    state = {
+    };
     render() {
         return (
             <div className="col-3 card m-3 border-0">
-                <img src="https://fakeimg.pl/200/" className="border card-img-top" />
+                <img src="https://fakeimg.pl/300/" className="border card-img-top" />
                 <div className="card-body border border-top-0">
                     <h5 className="card-title">課程名稱</h5>
                     <p className="card-text">教練名稱</p>
