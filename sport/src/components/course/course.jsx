@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Card from '../Card';
 import 'bootstrap/dist/css/bootstrap.css';
+import Carousels from '../Carousels';
 import './course.css';
 
 class Course extends Component {
@@ -11,21 +12,9 @@ class Course extends Component {
             <div id="box" className='container'>
                 <h5>aa/bb/cc</h5>
                 <div className='row justify-content-center'>
-                    
-                    <div id="carouselExampleSlidesOnly" className="carousel slide col-lg-7" data-ride="carousel">
-                        <div className="carousel-inner">
-                            <div className="carousel-item active">
-                                <img src="https://fakeimg.pl/350x200/ff0000/000" className="d-block w-100" />
-                            </div>
-                            <div className="carousel-item">
-                                <img src="https://fakeimg.pl/350x200/ff0000,128/000,255" className="d-block w-100" />
-                            </div>
-                            <div className="carousel-item">
-                                <img src="https://fakeimg.pl/350x200/?text=Hello" className="d-block w-100" />
-                            </div>
-                        </div>
+                    <div className="carousel slide col-lg-7">
+                        <Carousels />
                     </div>
-
                     <div className='col-lg-5 row justify-content-center'>
                         <div className='row justify-content-center'>
                             <p className='col-lg-12 my-3 text-center'>肌地台 自由教練場地租借</p>
