@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import Card from '../Card';
 import 'bootstrap/dist/css/bootstrap.css';
-import './course.css'
+import './course.css';
+
 class Course extends Component {
     state = { } ;
 
@@ -35,7 +37,7 @@ class Course extends Component {
                                 <span id='spa'>有氧訓練</span>
                             </div>
                             <div className='col-lg-12 m-3 text-center'>
-                                <img id='icon' src={require('./icon/map.png')} />
+                                <img id='icon' src={require('../icon/map.png')} />
                                 <span className='p-3'>臺中市北屯區東山路一段156-6</span>
                             </div>
                             <div className='col-lg-12 text-center'>
@@ -129,7 +131,7 @@ class Course extends Component {
                                 <div className='col-lg-6 container text-center'>
                                     <p className='text-align:center'>臺中市北屯區東山路一段156-6</p>
                                     <a href="https://goo.gl/maps/PnXNtARA1F72HbM67" target="_blank">
-                                        <img id='icon' src={require('./icon/google-maps.png')} />查看地圖
+                                        <img id='icon' src={require('../icon/google-maps.png')} />查看地圖
                                     </a>
                                 </div>
                             </div>
@@ -139,8 +141,8 @@ class Course extends Component {
                             <p id='title' className='container'>取消政策</p>
                             <div className='container'>
                                 <div className='row'>
-                                    <h5 className='col-lg-5 p-3'><img id='icon' src={require('./icon/check.png')} className='mx-2'/>課程開始1小時前</h5>
-                                    <h5 className='col-lg-5 p-3'><img id='icon' src={require('./icon/cross.png')} className='mx-2'/>課程開始少於1小時</h5>
+                                    <h5 className='col-lg-5 p-3'><img id='icon' src={require('../icon/check.png')} className='mx-2'/>課程開始1小時前</h5>
+                                    <h5 className='col-lg-5 p-3'><img id='icon' src={require('../icon/cross.png')} className='mx-2'/>課程開始少於1小時</h5>
                                 </div>
                             </div>
                         </div>
@@ -148,7 +150,7 @@ class Course extends Component {
                             <p id='title' className='container'>注意事項</p>
                             <div className='container'>
                                 <div className='row'>
-                                    <h5 className='col-lg-12 p-3'><img id='icon' src={require('./icon/no-smoke.png')} className='mx-2'/>禁止吸煙</h5>
+                                    <h5 className='col-lg-12 p-3'><img id='icon' src={require('../icon/no-smoke.png')} className='mx-2'/>禁止吸煙</h5>
                                 </div>
                             </div>
                         </div>
@@ -186,7 +188,7 @@ class Course extends Component {
                                         <table className="table " data-toggle="table">
                                             <tr>
                                                 <th scope="row" className='row text-center'>
-                                                    <img src="https://dummyimage.com/100/000/fff"  style={{height: '1%'}} className='col-5 mt-3 rounded-circle'/>
+                                                    <img src="https://dummyimage.com/100/000/fff" className='col-5 mt-3 rounded-circle'/>
                                                     <div className='col-5'>
                                                         <h3>name <span style={{fontSize: '15px'}}> time </span></h3>
                                                         <p className='mt-3'>我會想再繼續租借我會想再繼續租借我會想再繼我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借</p>
@@ -195,7 +197,7 @@ class Course extends Component {
                                             </tr>
                                             <tr>
                                                 <th scope="row" className='row text-center'>
-                                                    <img src="https://dummyimage.com/100/000/fff"  style={{height: '1%'}} className='col-5 mt-3 rounded-circle'/>
+                                                    <img src="https://dummyimage.com/100/000/fff" className='col-5 mt-3 rounded-circle'/>
                                                     <div className='col-5'>
                                                         <h3>name <span style={{fontSize: '15px'}}> time </span></h3>
                                                         <p className='mt-3'>我會想再繼續租借我會想再繼續租借我會想再繼我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借</p>
@@ -208,7 +210,7 @@ class Course extends Component {
                                         <table className="table " data-toggle="table">
                                             <tr>
                                                 <th scope="row" className=' row text-center'>
-                                                    <img src="https://dummyimage.com/100/000/fff"  style={{height: '1%'}} className='col-5 mt-3 rounded-circle'/>
+                                                    <img src="https://dummyimage.com/5000/000/fff" className='col-5 mt-3 rounded-circle'/>
                                                     <div className='col-5'>
                                                         <h3>name <span style={{fontSize: '15px'}}> time </span></h3>
                                                         <p className='mt-3'>我會想再繼續租借我會想再繼續租借我會想再繼我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借</p>
@@ -217,7 +219,7 @@ class Course extends Component {
                                             </tr>
                                             <tr>
                                                 <th scope="row" className='row text-center'>
-                                                    <img src="https://dummyimage.com/100/000/fff"  style={{height: '1%'}} className='col-5 mt-3 rounded-circle'/>
+                                                    <img src="https://dummyimage.com/100/000/fff" className='col-5 mt-3 rounded-circle'/>
                                                     <div className='col-5'>
                                                         <h3>name <span style={{fontSize: '15px'}}> time </span></h3>
                                                         <p className='mt-3'>我會想再繼續租借我會想再繼續租借我會想再繼我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借</p>
@@ -233,42 +235,9 @@ class Course extends Component {
                             <p id='title' className='container'>關聯課程</p>
                             <div className='container'>
                                 <div className='row mt-5 justify-content-center'>
-                                    <div className="col-lg-3 card border-0">
-                                        <img src="https://fakeimg.pl/300/" className="card-img-top" />
-                                        <div className="card-body">
-                                            <h5 className="card-title">課程名稱</h5>
-                                            <p className="card-text">教練名稱</p>
-                                            <p className="card-text"><small className="text-muted">地點</small></p>                                    
-                                        </div>
-                                        <div class="bg-white card-footer"><span>評價</span><span className="m-5">$價錢</span></div>
-                                    </div>
-                                    <div className="col-lg-3 card border-0">
-                                        <img src="https://fakeimg.pl/300/" className="card-img-top" />
-                                        <div className="card-body">
-                                            <h5 className="card-title">課程名稱</h5>
-                                            <p className="card-text">教練名稱</p>
-                                            <p className="card-text"><small className="text-muted">地點</small></p>                                    
-                                        </div>
-                                        <div class="bg-white card-footer"><span>評價</span><span className="m-5">$價錢</span></div>
-                                    </div>
-                                    <div className="col-lg-3 card border-0">
-                                        <img src="https://fakeimg.pl/300/" className="card-img-top" />
-                                        <div className="card-body">
-                                            <h5 className="card-title">課程名稱</h5>
-                                            <p className="card-text">教練名稱</p>
-                                            <p className="card-text"><small className="text-muted">地點</small></p>                                    
-                                        </div>
-                                        <div class="bg-white card-footer"><span>評價</span><span className="m-5">$價錢</span></div>
-                                    </div>
-                                    <div className="col-lg-3 card border-0">
-                                        <img src="https://fakeimg.pl/300/" className="card-img-top" />
-                                        <div className="card-body">
-                                            <h5 className="card-title">課程名稱</h5>
-                                            <p className="card-text">教練名稱</p>
-                                            <p className="card-text"><small className="text-muted">地點</small></p>                                    
-                                        </div>
-                                        <div class="bg-white card-footer"><span>評價</span><span className="m-5">$價錢</span></div>
-                                    </div>
+                                    <Card />
+                                    <Card />
+                                    <Card />
                                 </div>
                             </div>
                         </div>
