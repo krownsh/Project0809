@@ -6,10 +6,6 @@
     white-space: nowrap;
 }
 
-#img {
-    border-radius:50%;
-}
-
 #icon {
     width: 30px;
     height: 30px;
@@ -23,5 +19,5 @@
 
 #title {
     font-size: 30px;
-    background-color: rgba(211, 211, 211, 0.4)
+    background-color: rgba(211, 211, 211, 0.4);
 }
