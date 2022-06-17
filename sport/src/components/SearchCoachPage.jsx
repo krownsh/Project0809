@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import Card from './Card';
 import '../css/search.css';
 import '../js/search.js';
-class SearchPage extends Component {
+class SearchCoachPage extends Component {
     state = {}
-    
+
     render() {
         return (
             <div className='container'>
-                <span>首頁</span><span> / </span><span className='text-danger'>探索</span>
+                <span>教練</span><span> / </span><span className='text-danger'>探索</span>
                 <div className='row mt-3'>
                     <div className='col-3 border'>
                         <h3>篩選</h3>
@@ -70,8 +70,8 @@ class SearchPage extends Component {
                     </div>
                     <div className='col-9 border '>
                         <div className='row text-center'>
-                            <div className='col-6 shadow btn'>找課程</div>
-                            <div className='col-6 shadow btn'>找場地</div>
+                            <a className='col-6 shadow btn bg-black text-white' href="/">找課程</a>
+                            <a className='col-6 shadow btn' href="/site">找場地</a>
                         </div>
                         <div className='row mt-5 justify-content-center'>
                             <Card />
@@ -90,4 +90,4 @@ class SearchPage extends Component {
 
 }
 
-export default SearchPage;
+export default SearchCoachPage;

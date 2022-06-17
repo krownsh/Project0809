@@ -1,6 +1,9 @@
 import $ from 'jquery';
 $(function(){
-    $('div.col-6.shadow.btn').on('click', function(e){
+    $('a.col-6.shadow.btn').on('mouseenter', function(e){
         $(this).toggleClass('bg-danger');
+    })
+    $('a.col-6.shadow.btn').on('mouseleave', function(e){
+        $(this).removeClass('bg-danger');
     })
 });
