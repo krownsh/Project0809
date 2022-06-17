@@ -53,14 +53,18 @@ class Course extends Component {
                     <div className='container my-5'>
                         <div className='container'>
                             <p id='title' className='container'>場地簡介</p>
-                            <p>
-                                在離開俱樂部後，我也台中到處跑去上課，深知自由教練的不易，剛好有機會承租了這個店面，環境不大，但該有的設備都有，專門為自由教練所準備的場地，外面有個休息區，沒課的時候可以在這裡休息、訓練。
-                                會招收少數的會員自主訓練，在這裏不會有太大的壓力，不會有教練強迫推銷課程，可以很自在的在這裡運動，環境都有監視器、置物櫃，也有準備AED，櫃檯處也提供咖啡機使用。
-                            </p>
+                            <div className='container'>
+                                <p>
+                                    在離開俱樂部後，我也台中到處跑去上課，深知自由教練的不易，剛好有機會承租了這個店面，環境不大，但該有的設備都有，專門為自由教練所準備的場地，外面有個休息區，沒課的時候可以在這裡休息、訓練。
+                                    會招收少數的會員自主訓練，在這裏不會有太大的壓力，不會有教練強迫推銷課程，可以很自在的在這裡運動，環境都有監視器、置物櫃，也有準備AED，櫃檯處也提供咖啡機使用。
+                                </p>
+                            </div>
                         </div>
                         <div className='container'>
                             <p id='title' className='container'>租借限制</p>
-                            <p>無限制，一般消費者、教練/老師皆可租借(可帶學員入場教學)</p>
+                            <div className='container'>
+                                <p>無限制，一般消費者、教練/老師皆可租借(可帶學員入場教學)</p>
+                            </div>
                         </div>
                         <div className='container'>
                             <p id='title' className='container'>設備與服務</p>
@@ -141,8 +145,14 @@ class Course extends Component {
                             <p id='title' className='container'>取消政策</p>
                             <div className='container'>
                                 <div className='row'>
-                                    <h5 className='col-lg-5 p-3'><img id='icon' src={require('../icon/check.png')} className='mx-2'/>課程開始1小時前</h5>
-                                    <h5 className='col-lg-5 p-3'><img id='icon' src={require('../icon/cross.png')} className='mx-2'/>課程開始少於1小時</h5>
+                                    <h5 className='col-lg-5 p-3'><img id='icon' src={require('../icon/check.png')} className='mx-2'/>
+                                        課程開始1小時前
+                                        <span style={{fontSize: '15px'}}> (可全額退款100%) </span>
+                                    </h5>
+                                    <h5 className='col-lg-5 p-3'><img id='icon' src={require('../icon/cross.png')} className='mx-2'/>
+                                        課程開始少於1小時
+                                        <span style={{fontSize: '15px'}}> (不可退款) </span>
+                                    </h5>
                                 </div>
                             </div>
                         </div>
@@ -188,8 +198,8 @@ class Course extends Component {
                                         <table className="table " data-toggle="table">
                                             <tr>
                                                 <th scope="row" className='row text-center'>
-                                                    <img src="https://dummyimage.com/100/000/fff" className='col-5 mt-3 rounded-circle'/>
-                                                    <div className='col-5'>
+                                                    <img src="https://dummyimage.com/100/000/fff" className='col-5 mt-3 rounded-circle h-100'/>
+                                                    <div className='col-5 mx-3 my-2'>
                                                         <h3>name <span style={{fontSize: '15px'}}> time </span></h3>
                                                         <p className='mt-3'>我會想再繼續租借我會想再繼續租借我會想再繼我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借</p>
                                                     </div>
@@ -197,8 +207,8 @@ class Course extends Component {
                                             </tr>
                                             <tr>
                                                 <th scope="row" className='row text-center'>
-                                                    <img src="https://dummyimage.com/100/000/fff" className='col-5 mt-3 rounded-circle'/>
-                                                    <div className='col-5'>
+                                                    <img src="https://dummyimage.com/100/000/fff" className='col-5 mt-3 rounded-circle h-100'/>
+                                                    <div className='col-5 mx-3 my-2'>
                                                         <h3>name <span style={{fontSize: '15px'}}> time </span></h3>
                                                         <p className='mt-3'>我會想再繼續租借我會想再繼續租借我會想再繼我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借</p>
                                                     </div>
@@ -209,9 +219,9 @@ class Course extends Component {
                                     <div className='col-lg-5 mr-5'>
                                         <table className="table " data-toggle="table">
                                             <tr>
-                                                <th scope="row" className=' row text-center'>
-                                                    <img src="https://dummyimage.com/5000/000/fff" className='col-5 mt-3 rounded-circle'/>
-                                                    <div className='col-5'>
+                                                <th scope="row" className='row text-center'>
+                                                    <img src="https://dummyimage.com/5000/000/fff" className='col-5 mt-3 rounded-circle h-100'/>
+                                                    <div className='col-5 mx-3 my-2'>
                                                         <h3>name <span style={{fontSize: '15px'}}> time </span></h3>
                                                         <p className='mt-3'>我會想再繼續租借我會想再繼續租借我會想再繼我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借</p>
                                                     </div>
@@ -219,10 +229,10 @@ class Course extends Component {
                                             </tr>
                                             <tr>
                                                 <th scope="row" className='row text-center'>
-                                                    <img src="https://dummyimage.com/100/000/fff" className='col-5 mt-3 rounded-circle'/>
-                                                    <div className='col-5'>
+                                                    <img src="https://dummyimage.com/100/000/fff" className='col-5 mt-3 rounded-circle h-100'/>
+                                                    <div className='col-5 mx-3 my-2'>
                                                         <h3>name <span style={{fontSize: '15px'}}> time </span></h3>
-                                                        <p className='mt-3'>我會想再繼續租借我會想再繼續租借我會想再繼我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借</p>
+                                                        <p className='mt-3 vw-75'>我會想再繼續租借我會想再繼續租借我會想再繼我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借我會想再繼續租借</p>
                                                     </div>
                                                 </th>
                                             </tr>

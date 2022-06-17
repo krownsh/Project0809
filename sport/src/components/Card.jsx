@@ -4,7 +4,7 @@ class Card extends Component {
     state = {};
     render() {
         return (
-            <div className="col-3 card m-3 border-0">
+            <div className="col-lg-3 card m-3 border-0">
                 <img src="https://fakeimg.pl/400/" className="border card-img-top" />
                 <div className="card-body border-top-0">
                     <h5 className="card-title">課程名稱</h5>
